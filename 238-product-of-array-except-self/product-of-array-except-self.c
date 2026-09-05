@@ -22,6 +22,9 @@ int* productExceptSelf(int* nums, int numsSize, int* returnSize) {
         answer[i] = leftProduct[i] * rightProduct[i];
     }
     
-
+   
+    free(leftProduct);
+    free(rightProduct);
+    
     return answer;
 }
